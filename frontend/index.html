@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafeGuard AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <header>
+
+            <h1>🛡️ SafeGuard AI</h1>
+
+            <p>
+                AI Safety, Hallucination & Jailbreak Defense Engine
+            </p>
+
+        </header>
+
+
+        <main>
+
+            <!-- Prompt Section -->
+
+            <section class="prompt-box">
+
+                <h2>Test Your AI Prompt</h2>
+
+                <textarea id="promptInput" placeholder="Enter your prompt here..."></textarea>
+
+                <button id="askButton">
+                    Analyze Prompt
+                </button>
+
+            </section>
+
+
+            <!-- Safety Report -->
+
+            <section id="resultSection" class="result-section">
+
+                <h2>Safety Report</h2>
+
+
+                <!-- Overall Status -->
+
+                <div class="status-card">
+
+                    <span>Status</span>
+
+                    <strong id="status">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <!-- Risk Score -->
+
+                <div class="score-card">
+
+                    <span>Risk Score</span>
+
+                    <strong id="riskScore">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <!-- Security Metrics -->
+
+                <div class="security-grid">
+
+                    <div class="security-item">
+
+                        <span>
+                            🛡️ Jailbreak
+                        </span>
+
+                        <strong id="jailbreak">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="security-item">
+
+                        <span>
+                            🔐 Prompt Injection
+                        </span>
+
+                        <strong id="injection">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="security-item">
+
+                        <span>
+                            🧠 Hallucination
+                        </span>
+
+                        <strong id="hallucinationScore">
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div class="security-item">
+
+                        <span>
+                            ✓ Factual Consistency
+                        </span>
+
+                        <strong id="consistency">
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- AI Response -->
+
+                <div class="response-box">
+
+                    <h3>AI Response</h3>
+
+                    <p id="aiResponse">
+                        No response yet.
+                    </p>
+
+                </div>
+
+
+                <!-- Safety Explanation -->
+
+                <div class="explanation-box">
+
+                    <h3>Safety Explanation</h3>
+
+                    <p id="explanation">
+                        No analysis yet.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
